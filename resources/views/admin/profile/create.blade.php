@@ -17,6 +17,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>MYプロフィール</h2>
+                
             </div>
         </div>
     </div>

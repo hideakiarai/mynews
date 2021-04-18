@@ -8,7 +8,7 @@ use App\News;
 
 class NewsController extends Controller
 {
-  public function add()
+public function add()
   {
     return view('admin.news.create');
   }
@@ -18,7 +18,6 @@ class NewsController extends Controller
 
       // Varidationを行う
       $this->validate($request, News::$rules);
-
       $news = new News;
       $form = $request->all();
 

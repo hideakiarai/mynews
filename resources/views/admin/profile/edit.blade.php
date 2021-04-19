@@ -1,5 +1,5 @@
 @extends('layouts.profile')
-@section('title', 'プロフィールの編集')
+@section('title', 'プロフィール編集')
 
 @section('content')
     <div class="container">
@@ -46,6 +46,20 @@
                         </div>
                     </div>
                 </form>
+                <div class="row mt-5">
+                    <div class="col-md-4 mx-auto">
+                        <h2>編集履歴</h2>
+                        <ul class="list-group">
+                            @if ($news_form->profilehistories != NULL)
+                                @foreach ($news_form->profilehistories as $history)
+                                    <li class="list-group-item">{{ $history->edited_at }}</li>
+                                  
+                                    
+                                @endforeach
+                            @endif
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

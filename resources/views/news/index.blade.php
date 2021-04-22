@@ -36,6 +36,7 @@
                                     {{ $post->updated_at->format('Y年m月d日') }}
                                 </div>
                                 <div class="title">
+                                    <p>タイトル</p>
                                     {{ str_limit($post->title, 150) }}
                                 </div>
                                 <div class="body mt-3">
